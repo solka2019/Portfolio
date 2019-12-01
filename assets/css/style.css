@@ -1,7 +1,38 @@
-nav {
-float: right
+.menu {
+    display: flex;     
+    /* justify-items: center; */
+    align-items: center;
+    background-color:#ffffff;
+    border: 5px solid #cccccc;
+
+/* display flex coloca os item do menu ao lado do meu nome ao inves de embaixo */
+/* align items center, faz com que a lista fique no centro do box ao lado do meu nome */
 
 }
 
-nav li {display: inline-block
+.my-picture {
+/* display: flex */
+width: 30%;
+height: auto;
+
+}
+
+body {
+    /* background image que tem que usar do subtle patterns. i can chose the pattern I like - essa eh a tela maior  */
+background-image: url("floor-tile.png");
+ 
+}
+.main-content {
+border: 20px solid #dddddd;
+position: relative;
+left: 30px;
+width: 960px;
+
+
+
+}
+
+.my-paragraphs{
+
+
 }
