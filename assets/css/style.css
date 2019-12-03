@@ -10,12 +10,6 @@
 
 }
 
-.my-picture {
-/* display: flex */
-width: 30%;
-height: auto;
-
-}
 
 body {
     /* background image que tem que usar do subtle patterns. i can chose the pattern I like - essa eh a tela maior  */
@@ -23,15 +17,25 @@ background-image: url("floor-tile.png");
  
 }
 .main-content {
-border: 20px solid #dddddd;
+border: 5px solid #dddddd;
 position: relative;
 left: 30px;
 width: 960px;
-
-
+height: 600px;
+position: absolute;
 
 }
 
+.my-picture {
+    /* display: flex */
+    width: 30%;
+    height: auto;
+    position: relative;
+    left: 10px;
+    top: 50px;
+    
+    }
+    
 .my-paragraphs{
 
 
