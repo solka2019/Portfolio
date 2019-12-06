@@ -106,6 +106,7 @@ body {
 
 img {
     float: left;
+    
 }
 
 footer {
@@ -203,6 +204,7 @@ margin-left: 10px;
 
 #img1{
 
+    size: 30%;
     position: relative;
     margin-right: 30px;  
 }
@@ -210,6 +212,8 @@ section {
     display: block;
 }
 
+
+/* header */
 #label1 {
     position: absolute;
     text-align: center;
@@ -218,8 +222,11 @@ section {
     height: 40px;
     margin-top: -50px;
     background: #4aaaa5;
+
 }
 
+
+/* footer */
 footer {
     position: fixed;
     left: 0;
@@ -227,3 +234,5 @@ footer {
     width: 100%;
     text-align: center;
  }
+
+ /* form tags */
