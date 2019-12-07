@@ -42,7 +42,7 @@
 
 #wrap {
     width: 950px;
-    height: 600px;
+    height: 500px;
     padding: 10px 30px;
     background-color: #ffffff;
     border: 10px solid #dddddd;
@@ -168,6 +168,14 @@ footer {
     bottom: 0;
     width: 100%;
     text-align: center;
+    /* line-height:50px; */
+    padding-bottom:0px;
+    height:65px;
+    margin-top:30px;
+    background: #666666;
+    border-top: 8px solid #4aaaa5;
+    color: #dddddd;
+
 }
 
 /* form tags - contact html */
