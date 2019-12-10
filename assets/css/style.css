@@ -2,11 +2,13 @@
     margin: 0;
     padding: 0;
 }
-Body { background-attachment: fixed;
-        background-image: url("../images/floor-tile.png");
-        /* background-repeat: repeat; */
-      }
+
+Body {
+    background-attachment: fixed;
+    background-image: url("../images/floor-tile.png");
+    /* background-repeat: repeat; */
 }
+
 /* in all of the pages */
 /* header */
 #container {
@@ -15,32 +17,50 @@ Body { background-attachment: fixed;
 
 #menu {
     display: flex;
-    align-items: center;
+    /* can do display flex now because there are two boxes: left and rigth, so it's ok because flex will put them side-by-side */
     border: 4px solid #cccccc;
     position: relative;
     height: 80px;
     width: 100%;
-    margin-top: -25px;
+    margin-top: 0px;
     background-color: #ffffff;
-    /* margin-left: 50px; */
-        /* verify negative margin-top - inside the page*/
-}
-#nav {
-    float: right;
-    margin-top: 25px;
-    /* position: sticky; */
-    
+    float: center;
+    padding-right: 50px;
+    /* overflow: scroll; */
+    /* use overflow: scroll to test and if it shows scroll bars means the control is going beyond the screen*/
+    /* putting padding-right: 50px moved the size of the menue to be back within the page. remove the padding and add the overflow:scroll to see*/
+    /* margin-left: 50px; /
+    /* verify negative margin-top - inside the page*/
 }
 
-#nav a {
-    display: inline-block;
-    padding-left: 15px;
-    margin-left: 15px;
+#left-menu {
+    height: 80px;
+    width: 100%;
+    padding-left: 290px;
+}
+
+#right-menu {
+    height: 80px;
+    width: 100%;
+    padding-right: 250px;
+    /* position: sticky; */
+    /*this makes this box go 250px to the left - adding a padding on the right side! */
+    /* with this 250px of padding, the last menu item will be on top (aligned) with the wrap area for text. */
+}
+
+
+#nav-right a {
+    padding-left: 10px;
+    margin-left: 20px;
+    margin-top: 35px;
+    /* padding-bottom: 100px; */
+   float: right; 
+   /* when I add float right, the order of my menu changes, "about" goes to the end of my menu */
     line-height: 15px;
     color: #999;
     text-decoration: none;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    border-left: 1px solid #eeffee;
+     
 }
 
 h2 {
@@ -57,15 +77,15 @@ h2 {
     margin-inline-end: 0px;
     font-weight: bold;
 }
-/* display flex to have items side-by-side and not top-down */
+
 #logo {
     width: auto;
-    height: 70px;
+    height: 80px;
     float: left;
     border-right: 7px solid #eeeeee;
     border-left: 4px solid #eeeeee;
-    margin-left: 280px;
-    margin-bottom: -10px; 
+    /* margin-left: 280px; */
+    /* margin-bottom: -30px; */
     font-size: 20pt;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: 700;
@@ -74,19 +94,25 @@ h2 {
     color: #ffffff;
     background: #4aaaa5;
     /* negative sign in margin-bottom made the entire logo/div go up in the page */
-    
 }
-     /* footer */
+
+hr {
+   width:1020px;
+   height: 4px;
+   margin: 20px 298px 30px 300px;
+   background-color: #dddddd;
+}
+/* footer */
 footer {
     width: 100%;
-    height:65px;
+    height: 65px;
     left: 0;
     bottom: 0;
-    padding-bottom:0px;
+    padding-bottom: 0px;
     border-top: 8px solid #4aaaa5;
     text-align: center;
-    line-height:60px;
-    margin-top:30px;
+    line-height: 60px;
+    margin-top: 30px;
     color: #dddddd;
     position: fixed;
     background: #666666;
@@ -97,12 +123,12 @@ footer {
 #sidebar {
     width: 150px;
     height: 200px;
-    
+
     float: left;
     position: absolute;
     top: 150px;
     left: 400px;
-    
+
 }
 
 #wrap {
@@ -131,11 +157,12 @@ footer {
     padding: 5px;
     text-align: left;
     line-height: 30px;
- }
+}
 
 img {
     float: left;
 }
+
 /* check the following properties */
 
 
